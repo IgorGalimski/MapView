@@ -20,4 +20,18 @@
 }
 
 
+- (IBAction)location:(id)sender {
+}
+
+- (IBAction)hybrid:(id)sender {
+}
+
+- (IBAction)satellite:(id)sender {
+}
+
+- (IBAction)standart:(id)sender {
+}
+
+- (IBAction)direction:(id)sender {
+}
 @end

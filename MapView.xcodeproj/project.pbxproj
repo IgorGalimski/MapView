@@ -16,6 +16,7 @@
 		182B369324AF1CB800793934 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B369224AF1CB800793934 /* main.m */; };
 		182B369D24AF1CB800793934 /* MapViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B369C24AF1CB800793934 /* MapViewTests.m */; };
 		182B36A824AF1CB800793934 /* MapViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B36A724AF1CB800793934 /* MapViewUITests.m */; };
+		182B36B724AF214800793934 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B36B624AF214800793934 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		182B36A324AF1CB800793934 /* MapViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182B36A724AF1CB800793934 /* MapViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewUITests.m; sourceTree = "<group>"; };
 		182B36A924AF1CB800793934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182B36B624AF214800793934 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182B36B724AF214800793934 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +91,7 @@
 				182B369B24AF1CB800793934 /* MapViewTests */,
 				182B36A624AF1CB800793934 /* MapViewUITests */,
 				182B367E24AF1CB700793934 /* Products */,
+				182B36B524AF214800793934 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +139,14 @@
 				182B36A924AF1CB800793934 /* Info.plist */,
 			);
 			path = MapViewUITests;
+			sourceTree = "<group>";
+		};
+		182B36B524AF214800793934 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				182B36B624AF214800793934 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ED25VPN29;
 				INFOPLIST_FILE = MapView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ED25VPN29;
 				INFOPLIST_FILE = MapView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet MKMapView *mapKit;
+- (IBAction)direction:(id)sender;
+- (IBAction)standart:(id)sender;
+- (IBAction)satellite:(id)sender;
+- (IBAction)hybrid:(id)sender;
+- (IBAction)location:(id)sender;
 
 @end
 

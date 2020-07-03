@@ -15,27 +15,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yMV-VG-Djb">
-                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMV-VG-Djb">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem title="Standart" id="qB2-gL-4k0" userLabel="Standart"/>
+                                    <barButtonItem title="Standart" id="qB2-gL-4k0" userLabel="Standart">
+                                        <connections>
+                                            <action selector="standart:" destination="BYZ-38-t0r" id="JSM-58-53s"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="hZg-XX-Y7L"/>
-                                    <barButtonItem title="Satellite" id="yrk-DT-4rW" userLabel="Satellite"/>
+                                    <barButtonItem title="Satellite" id="yrk-DT-4rW" userLabel="Satellite">
+                                        <connections>
+                                            <action selector="satellite:" destination="BYZ-38-t0r" id="dNk-sK-C6O"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="dML-aW-2bB"/>
-                                    <barButtonItem title="Hybrid" id="GmI-YN-Vez" userLabel="Hybrid"/>
+                                    <barButtonItem title="Hybrid" id="GmI-YN-Vez" userLabel="Hybrid">
+                                        <connections>
+                                            <action selector="hybrid:" destination="BYZ-38-t0r" id="b69-by-1bk"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="oc9-Is-hNh"/>
-                                    <barButtonItem title="Locate" id="gyU-4j-FhK" userLabel="Locate"/>
+                                    <barButtonItem title="Locate" id="gyU-4j-FhK" userLabel="Locate">
+                                        <connections>
+                                            <action selector="location:" destination="BYZ-38-t0r" id="C3B-AC-mhl"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HgR-lb-o6z">
+                                <rect key="frame" x="0.0" y="50" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="MapView" id="Taq-1r-ZSP">
+                                        <barButtonItem key="rightBarButtonItem" title="Direction" id="4As-Lp-mEh">
+                                            <connections>
+                                                <action selector="direction:" destination="BYZ-38-t0r" id="AUH-m6-46W"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Rsr-kd-S07">
+                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Rsr-kd-S07" firstAttribute="top" secondItem="HgR-lb-o6z" secondAttribute="bottom" id="3FI-F0-O7b"/>
+                            <constraint firstItem="yMV-VG-Djb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AEX-eW-LvB"/>
+                            <constraint firstItem="yMV-VG-Djb" firstAttribute="top" secondItem="Rsr-kd-S07" secondAttribute="bottom" id="Ggs-O4-iTu"/>
+                            <constraint firstItem="Rsr-kd-S07" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WcP-Pc-8eb"/>
+                            <constraint firstItem="yMV-VG-Djb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zna-W3-aVo"/>
+                            <constraint firstItem="Rsr-kd-S07" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bvC-Rp-0yK"/>
+                            <constraint firstItem="HgR-lb-o6z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="i62-Up-8b2"/>
+                            <constraint firstItem="HgR-lb-o6z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="y4K-8y-cvZ"/>
+                            <constraint firstItem="yMV-VG-Djb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yne-51-wqo"/>
+                            <constraint firstItem="HgR-lb-o6z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zMV-wP-Yfm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mapKit" destination="Rsr-kd-S07" id="0Bg-fw-768"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
