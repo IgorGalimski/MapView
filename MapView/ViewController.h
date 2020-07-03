@@ -16,7 +16,6 @@
 }
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapKit;
-- (IBAction)direction:(id)sender;
 - (IBAction)standart:(id)sender;
 - (IBAction)satellite:(id)sender;
 - (IBAction)hybrid:(id)sender;
