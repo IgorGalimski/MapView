@@ -70,9 +70,6 @@
     self.mapKit.mapType = MKMapTypeStandard;
 }
 
-- (IBAction)direction:(id)sender {
-}
-
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
     MKCoordinateRegion region;

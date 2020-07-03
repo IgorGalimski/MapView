@@ -46,13 +46,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HgR-lb-o6z">
                                 <rect key="frame" x="0.0" y="50" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="MapView" id="Taq-1r-ZSP">
-                                        <barButtonItem key="rightBarButtonItem" title="Direction" id="4As-Lp-mEh">
-                                            <connections>
-                                                <action selector="direction:" destination="BYZ-38-t0r" id="AUH-m6-46W"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="MapView" id="Taq-1r-ZSP"/>
                                 </items>
                             </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Rsr-kd-S07">

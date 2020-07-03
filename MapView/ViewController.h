@@ -20,7 +20,6 @@
 - (IBAction)standart:(id)sender;
 - (IBAction)satellite:(id)sender;
 - (IBAction)hybrid:(id)sender;
-- (IBAction)location:(id)sender;
 
 @end
 
