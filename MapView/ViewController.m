@@ -14,9 +14,25 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+ 
+    MKCoordinateRegion region;
+    MKCoordinateSpan span;
+    
+    span.latitudeDelta = 0.005;
+    span.longitudeDelta = 0.005;
+    
+    CLLocationCoordinate2D location;
+    
+    location.latitude = 34;
+    location.longitude = -118;
+    
+    region.span = span;
+    region.center = location;
+    
+    [self.mapKit setRegion:region animated:YES];
 }
 
 
